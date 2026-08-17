@@ -1,4 +1,4 @@
-# Ильяс · Full-Stack разработчик
+#  ·Full-Stack разработчик
 
 **Делаю продукты целиком** — UI, мобилка, API, интеграции и ускорение бэкенда.
 
@@ -8,11 +8,7 @@
 
 ---
 
-## Обо мне
-
-Привет — я **Ильяс**, fullstack-разработчик.  
 Не собираю учебные CRUD «для портфолио»: делаю **рабочие системы**, которыми пользуются люди.
-
 Главный кейс — платформа турагентства **[TravelHub](https://travelhub63.ru)**:
 
 - сайт с поиском туров и воронкой бронирования
@@ -21,9 +17,7 @@
 - оплаты, CRM, push, релизы через EAS
 
 Держу в голове весь путь: **продукт → API → мобилка/веб → деплой → узкие места по скорости**.
-
-## В чём я силён
-
+В чём я силён
 | Навык | Как это видно в работах |
 |------|-------------------------|
 | Full-stack ownership | Один продукт: web + mobile + backend + интеграции |
@@ -62,32 +56,22 @@ Express/TypeScript сервис: горящие туры → валидация 
 FastAPI + Telegram-бот + GigaChat.
 
 ## Стек
-
-```text
 Языки        TypeScript · JavaScript · Go · PHP · Python · SQL
 Mobile       Expo · React Native · React Navigation · EAS
 Frontend     Next.js · React · Tailwind CSS
 Backend      Node/Express · Go · FastAPI · PHP API
 Данные/инфра MySQL · кэш · Docker · nginx · cron · systemd
 Интеграции   Tourvisor · T-Bank · Firebase · CRM · VK
-```
-
 ## Как я работаю
-
 - Ship > talk — важнее живой URL, чем красивые скриншоты
 - Сначала bottleneck — измеряю, потом ускоряю (кэш, SWR, sidecar)
 - Чистые границы — mobile ↔ API ↔ CRM/payments
 - Документирую зачем — архитектура, деплой, откат
-
 ## Сейчас в фокусе
-
 - async Go workers для cold search
 - более жёсткие контракты mobile ↔ backend
 - сильный frontend на Next.js под клиентские продукты
-
 ## Контакты
-
 **Открыт к офферам:** Full-stack · Mobile (RN/Expo) · Backend
-
 - Сайт: [travelhub63.ru](https://travelhub63.ru)
 - Email: [gememix76142@gmail.com](mailto:gememix76142@gmail.com)
