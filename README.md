@@ -1,53 +1,66 @@
-# Ilyas Mardaliev
+# Ильяс Мардалиев
 
-## Full-stack developer with a backend focus
+## Full-stack разработчик, backend-фокус
 
-I build and ship product systems end to end: mobile apps, web interfaces, APIs,
-payments, CRM integrations, and production operations.
+Разрабатываю и довожу до релиза прикладные продукты: мобильные приложения,
+веб-интерфейсы, API, интеграции, платежные сценарии и внутренние сервисы.
 
-**Currently open to:** junior+ full-stack, backend, and React Native roles
+Мой текущий уровень: **junior+ / уверенный начинающий разработчик**. Основной
+интерес - backend и full-stack задачи, где можно отвечать за фичу целиком и
+расти в сторону Go-разработки.
 
-[TravelHub in production](https://travelhub63.ru) | [App Store](https://apps.apple.com/ru/app/travelhub/id6786282632) | [Email](mailto:gememix76142@gmail.com)
+[GitHub](https://github.com/s1kata) | [TravelHub](https://travelhub63.ru) | [Приложение в App Store](https://apps.apple.com/ru/app/travelhub/id6786282632) | [Связаться](mailto:gememix76142@gmail.com)
 
-## What I work with
+## Коротко обо мне
 
-`Go` `TypeScript` `React Native` `Expo` `Next.js` `PHP` `Python` `FastAPI` `SQL` `PostgreSQL` `MySQL` `Docker` `Firebase` `JWT`
+- Около 1,5 лет практической разработки на production-проекте.
+- Работал с фичами от постановки и архитектуры до тестирования, релиза и поддержки.
+- Учусь на 4 курсе по направлению «Информационная безопасность».
+- Сейчас углубляю Go, HTTP, SQL, Docker и проектирование backend-сервисов.
+- Использую AI-инструменты как ускоритель, но сам отвечаю за постановку задачи,
+  архитектуру, интеграции, проверку результата и эксплуатацию.
 
-## Featured work
+## Технологии
 
-### [TravelHub](https://travelhub63.ru)
+`Go` `TypeScript` `React Native` `Expo` `Next.js` `PHP` `Python` `FastAPI`
+`SQL` `PostgreSQL` `MySQL` `Docker` `JWT` `Firebase` `Git`
 
-Production travel platform with a live mobile application. I work across the
-whole product: search and booking flows, authentication, CRM, payments,
-support, release automation, and customer-facing operations.
+## Избранные проекты
 
-- [Mobile app](https://github.com/s1kata/app) - Expo, React Native, TypeScript, EAS, JWT, CRM and payments
-- [Main website and API](https://github.com/s1kata/travelhub-v2) - PHP, MySQL, booking and integrations
-- [Go sidecar](https://github.com/s1kata/microservice) - a fast search and cache service
+### TravelHub - production-продукт
 
-### [REST API and proxy](https://github.com/s1kata/RestApi)
+Платформа поиска и бронирования туров с мобильным приложением и веб-частью.
+Работал с пользовательскими сценариями, авторизацией, поиском, CRM,
+платежами, поддержкой, юридическими экранами и выпуском мобильных сборок.
 
-Go REST API for task management with PostgreSQL, separated storage and HTTP
-handler layers, filtering, update and delete flows, plus a standalone proxy.
+- [Мобильное приложение](https://github.com/s1kata/app) - Expo, React Native, TypeScript, EAS, JWT
+- [Сайт и API](https://github.com/s1kata/travelhub-v2) - PHP, MySQL, интеграции
+- [Go-сервис](https://github.com/s1kata/microservice) - отдельный сервис для поиска и кэширования
+
+### Go REST API и proxy
+
+Учебный, но законченный backend-проект: REST API задач на Go и PostgreSQL,
+разделение handler/storage слоёв, фильтрация, обновление и удаление задач,
+отдельный HTTP proxy, README и проверка сборки.
 
 - [REST API](https://github.com/s1kata/RestApi)
-- [Proxy service](https://github.com/s1kata/restapi-proxy)
+- [Proxy](https://github.com/s1kata/restapi-proxy)
 
-### More projects
+### Другие проекты
 
-- [AI parser](https://github.com/s1kata/ai-parser) - FastAPI, Telegram bot and document parsing
-- [Automation service](https://github.com/s1kata/automatize) - TypeScript service for publishing travel offers
-- [Optics website](https://github.com/s1kata/klarte-optics) - Next.js, TypeScript and Tailwind
-- [Music albums catalog](https://github.com/s1kata/music-albums-catalog) - full-stack Django project
+- [AI parser](https://github.com/s1kata/ai-parser) - FastAPI, Telegram-бот и обработка документов
+- [Automation service](https://github.com/s1kata/automatize) - TypeScript-сервис автоматизации
+- [Klarte Optics](https://github.com/s1kata/klarte-optics) - Next.js, TypeScript, Tailwind
+- [Music albums catalog](https://github.com/s1kata/music-albums-catalog) - full-stack Django-проект
 
-## How I build
+## Как я работаю
 
-- Ship working product features, not isolated demos.
-- Keep mobile, web, API, integrations, and deployment in one system view.
-- Measure bottlenecks before optimizing them.
-- Document architecture, release steps, and operational decisions.
+- Сначала понимаю пользовательскую и техническую задачу, затем выбираю простое решение.
+- Держу в поле зрения весь путь: клиент - API - база - внешние интеграции - релиз.
+- Проверяю изменения сборкой, тестами и ручным smoke-тестом.
+- Документирую запуск, конфигурацию и ограничения, чтобы проект можно было передать.
 
-## Current focus
+## Что ищу
 
-Deepening Go backend engineering, HTTP and SQL design, Docker workflows,
-queues, and reliable mobile-to-backend contracts.
+Backend или full-stack позицию в команде, где важны реальные продуктовые задачи,
+понятная обратная связь и рост в сторону сильной backend-разработки.
