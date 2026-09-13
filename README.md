@@ -1,77 +1,53 @@
-#  ·Full-Stack разработчик
+# Ilyas Mardaliev
 
-**Делаю продукты целиком** — UI, мобилка, API, интеграции и ускорение бэкенда.
+## Full-stack developer with a backend focus
 
-[Живой продукт: travelhub63.ru](https://travelhub63.ru) · **Открыт к офферам** · Россия
+I build and ship product systems end to end: mobile apps, web interfaces, APIs,
+payments, CRM integrations, and production operations.
 
-`TypeScript` `JavaScript` `React` `Next.js` `Node.js` `Go` `PHP` `Python` `MySQL` `Docker`
+**Currently open to:** junior+ full-stack, backend, and React Native roles
 
----
+[TravelHub in production](https://travelhub63.ru) | [App Store](https://apps.apple.com/ru/app/travelhub/id6786282632) | [Email](mailto:gememix76142@gmail.com)
 
-Не собираю учебные CRUD «для портфолио»: делаю **рабочие системы**, которыми пользуются люди.
-Главный кейс — платформа турагентства **[TravelHub](https://travelhub63.ru)**:
+## What I work with
 
-- сайт с поиском туров и воронкой бронирования
-- мобильное приложение на **Expo / React Native**
-- **Go**-sidecar для быстрого кэша поиска
-- оплаты, CRM, push, релизы через EAS
+`Go` `TypeScript` `React Native` `Expo` `Next.js` `PHP` `Python` `FastAPI` `SQL` `PostgreSQL` `MySQL` `Docker` `Firebase` `JWT`
 
-Держу в голове весь путь: **продукт → API → мобилка/веб → деплой → узкие места по скорости**.
-В чём я силён
-| Навык | Как это видно в работах |
-|------|-------------------------|
-| Full-stack ownership | Один продукт: web + mobile + backend + интеграции |
-| Mobile | Expo 54, TypeScript, JWT-auth, push, EAS-сборки |
-| Backend / perf | Go sidecar: cache hit ~50ms вместо секунд на PHP |
-| Frontend | Next.js + Tailwind, аккуратный UI и структура |
-| Интеграции | Tourvisor, T-Bank, Firebase, CRM SOTA, VK API |
-| Инженерный подход | README с архитектурой, rollback, чеклисты релиза |
+## Featured work
 
-## Избранные проекты
+### [TravelHub](https://travelhub63.ru)
 
-### TravelHub — продакшен-платформа для турагентства
+Production travel platform with a live mobile application. I work across the
+whole product: search and booking flows, authentication, CRM, payments,
+support, release automation, and customer-facing operations.
 
-Реальный продукт: поиск туров, бронирование, приложение, оплаты, CRM.
+- [Mobile app](https://github.com/s1kata/app) - Expo, React Native, TypeScript, EAS, JWT, CRM and payments
+- [Main website and API](https://github.com/s1kata/travelhub-v2) - PHP, MySQL, booking and integrations
+- [Go sidecar](https://github.com/s1kata/microservice) - a fast search and cache service
 
-| Репозиторий | Что внутри | Стек |
-|-------------|------------|------|
-| [travelhub-v2](https://github.com/s1kata/travelhub-v2) | Основной сайт + API | PHP, MySQL, Tailwind, JS |
-| [app](https://github.com/s1kata/app) | Мобильный клиент | Expo, React Native, TypeScript |
-| [microservice](https://github.com/s1kata/microservice) | Sidecar кэша поиска | Go, Docker, systemd |
-| [website](https://github.com/s1kata/website) | Ранняя версия платформы | PHP |
+### [REST API and proxy](https://github.com/s1kata/RestApi)
 
-Для рекрутера это сигнал: могу провести фичу **от идеи до продакшена**, а не только нарисовать компонент.
+Go REST API for task management with PostgreSQL, separated storage and HTTP
+handler layers, filtering, update and delete flows, plus a standalone proxy.
 
-### [klarte-optics](https://github.com/s1kata/klarte-optics) — Next.js frontend
+- [REST API](https://github.com/s1kata/RestApi)
+- [Proxy service](https://github.com/s1kata/restapi-proxy)
 
-Сайт салона оптики: каталог, услуги, запись, дизайн-система.  
-Next.js 16, App Router, TypeScript, Tailwind v4.
+### More projects
 
-### [automatize](https://github.com/s1kata/automatize) — automation backend
+- [AI parser](https://github.com/s1kata/ai-parser) - FastAPI, Telegram bot and document parsing
+- [Automation service](https://github.com/s1kata/automatize) - TypeScript service for publishing travel offers
+- [Optics website](https://github.com/s1kata/klarte-optics) - Next.js, TypeScript and Tailwind
+- [Music albums catalog](https://github.com/s1kata/music-albums-catalog) - full-stack Django project
 
-Express/TypeScript сервис: горящие туры → валидация → публикация в VK.
+## How I build
 
-### [ai-parser](https://github.com/s1kata/ai-parser) — AI-парсинг договоров
+- Ship working product features, not isolated demos.
+- Keep mobile, web, API, integrations, and deployment in one system view.
+- Measure bottlenecks before optimizing them.
+- Document architecture, release steps, and operational decisions.
 
-FastAPI + Telegram-бот + GigaChat.
+## Current focus
 
-## Стек
-Языки        TypeScript · JavaScript · Go · PHP · Python · SQL
-Mobile       Expo · React Native · React Navigation · EAS
-Frontend     Next.js · React · Tailwind CSS
-Backend      Node/Express · Go · FastAPI · PHP API
-Данные/инфра MySQL · кэш · Docker · nginx · cron · systemd
-Интеграции   Tourvisor · T-Bank · Firebase · CRM · VK
-## Как я работаю
-- Ship > talk — важнее живой URL, чем красивые скриншоты
-- Сначала bottleneck — измеряю, потом ускоряю (кэш, SWR, sidecar)
-- Чистые границы — mobile ↔ API ↔ CRM/payments
-- Документирую зачем — архитектура, деплой, откат
-## Сейчас в фокусе
-- async Go workers для cold search
-- более жёсткие контракты mobile ↔ backend
-- сильный frontend на Next.js под клиентские продукты
-## Контакты
-**Открыт к офферам:** Full-stack · Mobile (RN/Expo) · Backend
-- Сайт: [travelhub63.ru](https://travelhub63.ru)
-- Email: [gememix76142@gmail.com](mailto:gememix76142@gmail.com)
+Deepening Go backend engineering, HTTP and SQL design, Docker workflows,
+queues, and reliable mobile-to-backend contracts.
