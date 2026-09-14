@@ -5,7 +5,7 @@
 
 [![GitHub](https://img.shields.io/badge/GitHub-s1kata-181717?style=flat&logo=github)](https://github.com/s1kata)
 [![Telegram](https://img.shields.io/badge/Telegram-@ilyasmardaliev-26A5E4?style=flat&logo=telegram)](https://t.me/ilyasmardaliev)
-[![Email](https://img.shields.io/badge/Email-mardaliyevilyas12@gmail.com-EA4335?style=flat&logo=gmail)](mailto:mardaliyevilyas12@gmail.com)
+[![Email](https://img.shields.io/badge/Email-mardaliyevilyas12@gmail.com-EA4335?style=flat&logo=gmail)](mailto:gememix76142@gmail.com)
 
 ---
 
