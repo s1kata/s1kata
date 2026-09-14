@@ -30,19 +30,19 @@ Backend-разработчик с **1,5+ годами production-опыта**. �
 
 ## Избранные проекты
 
-### 🚀 TravelHub — мобильное приложение (production)
+### TravelHub — мобильное приложение (production)
 `React Native / Expo / TypeScript` · Опубликовано в App Store
 Мобильный клиент сервиса поиска и бронирования туров. JWT-авторизация, интеграция с CRM и платежами.
 
-### 🚀 TravelHub Web v2 (production)
+### TravelHub Web v2 (production)
 `PHP / MySQL / REST API`
 Веб-платформа сервиса: поиск туров, бронирование, интеграции, личный кабинет.
 
-### ⚙️ Go REST API (pet)
+### Go REST API (pet)
 `Go / PostgreSQL / Docker` · [github.com/s1kata/RestApi](https://github.com/s1kata/RestApi)
 Учебный, но законченный backend-проект: разделение handler/storage слоёв, фильтрация, обновление и удаление задач, README с архитектурой.
 
-### ⚙️ RestAPI Proxy (pet)
+### RestAPI Proxy (pet)
 `Go` · [github.com/s1kata/restapi-proxy](https://github.com/s1kata/restapi-proxy)
 HTTP proxy для REST API: маршрутизация, JSON, обработка ошибок, проксирование запросов.
 
