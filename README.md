@@ -1,457 +1,608 @@
-Ильяс Мардалиев
+# Ильяс Мардалиев
 
-Backend / Full Stack Developer · DevOps / DevSecOps
-Саратов · Remote / Hybrid · Open to opportunities
+### Backend / Full Stack Developer · DevOps / DevSecOps
 
-⸻
+**Саратов · Remote / Hybrid · Open to opportunities**
 
-About
+[![GitHub](https://img.shields.io/badge/GitHub-s1kata-181717?style=flat&logo=github)](https://github.com/s1kata)
+[![Telegram](https://img.shields.io/badge/Telegram-@ilyasmardaliev-26A5E4?style=flat&logo=telegram)](https://t.me/ilyasmardaliev)
+[![Email](https://img.shields.io/badge/Email-mardaliyevilyas12%40gmail.com-EA4335?style=flat&logo=gmail)](mailto:mardaliyevilyas12@gmail.com)
 
-Backend / Full Stack Developer with 2 years of production experience building and operating web and mobile products.
+---
 
-I work across the full product lifecycle — from application architecture and backend/API development to databases, third-party integrations, containerization, deployment and infrastructure.
+## About
 
-My main production project is TravelHub, a travel search and booking platform that I developed and maintained across web, mobile and backend components.
+Backend / Full Stack Developer with **2 years of production experience** building and operating web and mobile products.
 
-I also work with Go, Docker and Kubernetes, with a focus on reproducible deployments, service architecture and reliable application delivery.
+My main production project is **TravelHub** — a travel search and booking platform covering backend, web, mobile, integrations, databases and infrastructure.
 
-My current engineering focus is DevOps with a DevSecOps layer: CI/CD, Kubernetes, observability, infrastructure automation, container security and secure delivery practices.
+I work across the complete product lifecycle:
 
-⸻
+`Architecture → Backend → API → Database → Integrations → Docker → Kubernetes → CI/CD → Observability`
 
-Core Stack
+My current technical direction is **DevOps with a DevSecOps layer**, focusing on reliable deployments, infrastructure automation, observability and security.
 
-Backend
+---
 
-PHP Go REST API MySQL PostgreSQL JWT JSON
+## Technical Stack
 
-Frontend / Mobile
+| Area | Technologies |
+|---|---|
+| **Backend** | PHP, Go, REST API, MySQL, PostgreSQL, JWT, JSON |
+| **Frontend / Mobile** | React Native, Expo, TypeScript, JavaScript |
+| **Infrastructure** | Linux, Docker, Kubernetes, Kubespray, Helm, Nginx, containerd |
+| **CI/CD** | Git, GitHub Actions, Docker Registry, Helm deployments |
+| **Observability** | Prometheus, Grafana, Loki, Metrics, Logs, Alerting |
+| **Security** | RBAC, Secrets, SecurityContext, NetworkPolicy, Container Security |
+| **Integrations** | T-Bank, Tourvisor, CRM SOTA, REST APIs |
+| **Tools** | Git, Linux, Postman, Cursor |
 
-React Native Expo TypeScript JavaScript Tailwind CSS
+---
 
-DevOps / Infrastructure
+# Featured Projects
 
-Linux Docker containerd Kubernetes Kubespray Helm Nginx systemd Git CI/CD
+## TravelHub
 
-Observability
+### Production travel search & booking platform
 
-Prometheus Grafana Loki Metrics Logs Alerting Troubleshooting
+**PHP · MySQL · REST API · Nginx · Docker · Kubernetes**
 
-Security
+[Repository →](https://github.com/s1kata/travelhub-v2)
 
-RBAC Secrets SecurityContext NetworkPolicy Container Security DevSecOps
+TravelHub is a production travel platform for searching and booking tours.
 
-Integrations
+I worked across the complete product lifecycle — from application development and integrations to deployment and infrastructure.
 
-T-Bank Tourvisor CRM SOTA External REST APIs
+### Main components
 
-Tools
+```text
+Web / Mobile Client
+        │
+        ▼
+      Nginx
+        │
+        ▼
+   TravelHub API
+     │   │   │
+     │   │   └──────────► CRM SOTA
+     │   │
+     │   └──────────────► T-Bank
+     │
+     ├──────────────────► Tourvisor
+     │
+     ▼
+   MySQL / Cache
+```
 
-Git Linux Postman Cursor AI-assisted development
+### Responsibilities & engineering work
 
-⸻
+- Backend development
+- REST API development
+- JWT authentication
+- Database design and integration
+- Tourvisor API integration
+- T-Bank payment integration
+- CRM SOTA integration
+- Search and dictionary caching
+- Background cache warming
+- Nginx configuration
+- Environment-based configuration
+- Production deployment
+- Application security
+- Deployment documentation
 
-Featured Projects
+---
 
-TravelHub — Production Platform
+# TravelHub Mobile App
 
-PHP · MySQL · REST API · Nginx · Docker · Kubernetes
+### Production mobile application
 
-github.com/s1kata/travelhub-v2
+**React Native · Expo · TypeScript · REST API · JWT**
 
-Production travel search and booking platform.
+TravelHub mobile client published through the App Store.
 
-The project covers the complete application lifecycle — backend, REST API, database, external integrations, caching, deployment and infrastructure.
+### Features
 
-Key areas
+- Authentication
+- Tour search
+- Booking workflows
+- REST API integration
+- CRM integration
+- Payment integration
+- User account functionality
 
-* Travel search and booking
-* REST API for the mobile application
-* JWT authentication
-* Tourvisor integration
-* T-Bank payment integration
-* CRM integration
-* Search and dictionary caching
-* Background cache warming
-* Nginx reverse proxy
-* Environment-based configuration
-* Deployment documentation
-* Application security
+**App:** TravelHub  
+**Platform:** iOS / App Store
 
-High-level architecture
+---
 
-flowchart LR
-    Client["Web / Mobile Client"]
-    Nginx["Nginx"]
-    API["TravelHub API"]
-    DB[("MySQL")]
-    Tourvisor["Tourvisor API"]
-    Bank["T-Bank"]
-    CRM["CRM SOTA"]
-    Cache["Search Cache"]
-    Client --> Nginx
-    Nginx --> API
-    API --> DB
-    API --> Cache
-    API --> Tourvisor
-    API --> Bank
-    API --> CRM
+# TravelHub Search Cache
 
-⸻
+### Go microservice / sidecar
 
-TravelHub Mobile App
+**Go · Docker · Nginx · systemd · REST API · Caching**
 
-React Native · Expo · TypeScript · JWT · REST API
+[Repository →](https://github.com/s1kata/microservice)
 
-Production mobile client for the TravelHub platform.
-
-* Authentication
-* Tour search
-* Booking workflows
-* REST API integration
-* CRM integration
-* Payment integration
-* Production App Store release
-
-⸻
-
-TravelHub Search Cache — Go Microservice
-
-Go · Docker · Nginx · systemd · REST API · Caching
-
-github.com/s1kata/microservice
-
-A Go sidecar introduced alongside the existing PHP application to reduce unnecessary work on the PHP request path.
+A Go service introduced alongside the existing PHP application to reduce unnecessary work on the PHP request path.
 
 The service reads cached Tourvisor search data and preserves compatibility with the existing PHP API contract.
 
-Architecture
+### Architecture
 
-flowchart LR
-    Client["Client"]
-    Nginx["Nginx"]
-    Go["Go Search Cache"]
-    Cache[("Search Cache")]
-    PHP["PHP Application"]
-    Tourvisor["Tourvisor API"]
-    Client --> Nginx
-    Nginx --> Go
-    Go --> Cache
-    Go -->|Cache HIT| Client
-    Go -->|Cache MISS| PHP
-    PHP --> Tourvisor
-    PHP --> Cache
+```text
+                         ┌─────────────────┐
+                         │     Client      │
+                         └────────┬────────┘
+                                  │
+                                  ▼
+                         ┌─────────────────┐
+                         │      Nginx      │
+                         └────────┬────────┘
+                                  │
+                                  ▼
+                    ┌─────────────────────────┐
+                    │   Go Search Cache       │
+                    └──────────┬──────────────┘
+                               │
+                     ┌─────────┴─────────┐
+                     │                   │
+                 CACHE HIT          CACHE MISS
+                     │                   │
+                     ▼                   ▼
+               Cached JSON        PHP Application
+                                         │
+                                         ▼
+                                  Tourvisor API
+```
 
-Deployment architecture
+### Key engineering points
 
-flowchart TB
-    Host["Linux Host"]
-    Docker["Docker"]
-    Go["Go Sidecar"]
-    PHP["PHP Application"]
-    Nginx["Nginx"]
-    Systemd["systemd"]
-    Host --> Docker
-    Docker --> Go
-    Host --> PHP
-    Host --> Nginx
-    Systemd --> Go
-    Nginx --> Go
-    Nginx --> PHP
+- Cache-first request processing
+- PHP fallback for cache misses
+- Compatible JSON response contract
+- Docker deployment
+- systemd service
+- Nginx reverse-proxy integration
+- Health endpoint
+- Rollback procedure
+- Deployment checklist
 
-Key points
+The cached request path was optimized to approximately **50 ms instead of the previous multi-second PHP bootstrap path**.
 
-* Go HTTP service for cached search data
-* Cache-first request processing
-* PHP fallback for cache misses
-* Compatible JSON contract
-* Docker deployment
-* systemd service
-* Nginx reverse-proxy integration
-* Health endpoint
-* Rollback procedure
-* Production deployment checklist
+---
 
-The cached request path was optimized to approximately 50 ms instead of the previous multi-second PHP bootstrap path.
+# Go REST API
 
-⸻
+### Backend project
 
-Go REST API
+**Go · PostgreSQL · Docker · REST**
 
-Go · PostgreSQL · Docker · REST
+[Repository →](https://github.com/s1kata/RestApi)
 
-github.com/s1kata/RestApi
+Standalone REST API demonstrating structured backend architecture.
 
-A standalone backend project demonstrating structured REST API architecture.
+### Architecture
 
-Architecture
+```text
+HTTP Client
+     │
+     ▼
+┌─────────────┐
+│   Handler   │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│   Storage   │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│ PostgreSQL  │
+└─────────────┘
+```
 
-flowchart TB
-    Client["HTTP Client"]
-    Handler["HTTP Handlers"]
-    Storage["Storage Layer"]
-    DB[("PostgreSQL")]
-    Client --> Handler
-    Handler --> Storage
-    Storage --> DB
+### Includes
 
-Includes
+- HTTP handlers
+- Storage layer
+- PostgreSQL integration
+- CRUD operations
+- Filtering
+- JSON request / response handling
+- Error handling
+- Docker environment
 
-* HTTP handlers
-* Storage layer
-* PostgreSQL integration
-* CRUD operations
-* Filtering
-* JSON request/response handling
-* Error handling
-* Docker environment
-* Separate proxy component
+---
 
-⸻
+# REST API Proxy
 
-REST API Proxy
+### Go HTTP proxy
 
-Go · HTTP · JSON · REST
+**Go · HTTP · JSON · REST**
 
-github.com/s1kata/restapi-proxy
+[Repository →](https://github.com/s1kata/restapi-proxy)
 
-HTTP proxy service for the Go REST API.
+HTTP proxy service for REST API communication.
 
-* Request routing
-* HTTP communication
-* JSON processing
-* Error handling
-* Request forwarding
-* Separation of API access from clients
+### Includes
 
-⸻
+- HTTP request forwarding
+- Routing
+- JSON processing
+- Error handling
+- REST communication
+- Separation of API access from clients
 
-DevOps / Infrastructure
+---
 
-My infrastructure work focuses on running the application reliably rather than treating deployment as a separate step.
+# DevOps / Infrastructure
 
-Application delivery
+My infrastructure work focuses on making applications reproducible, deployable and observable.
 
-flowchart LR
-    Code["Source Code"]
-    Git["Git"]
-    CI["CI/CD"]
-    Image["Container Image"]
-    Registry["Container Registry"]
-    Helm["Helm"]
-    K8s["Kubernetes"]
-    Service["Kubernetes Service"]
-    Nginx["Nginx / Ingress"]
-    Code --> Git
-    Git --> CI
-    CI --> Image
-    Image --> Registry
-    Registry --> Helm
-    Helm --> K8s
-    K8s --> Service
-    Service --> Nginx
+## Kubernetes
 
-Kubernetes architecture
+Current Kubernetes environment:
 
-flowchart TB
-    User["External User"]
-    Ingress["Ingress / Nginx"]
-    ServiceWeb["Web Service"]
-    ServiceApp["App Service"]
-    ServiceDB["DB Service"]
-    Web["Web Pod"]
-    App["App Pod"]
-    DB["MySQL Pod"]
-    User --> Ingress
-    Ingress --> ServiceWeb
-    ServiceWeb --> Web
-    Web --> ServiceApp
-    ServiceApp --> App
-    App --> ServiceDB
-    ServiceDB --> DB
+```text
+                    Kubernetes Cluster
+                           │
+             ┌─────────────┴─────────────┐
+             │                           │
+       Control Plane                  Worker
+             │                           │
+             └─────────────┬─────────────┘
+                           │
+                    Kubernetes API
+                           │
+          ┌────────────────┼────────────────┐
+          │                │                │
+     Deployment        Deployment       Deployment
+          │                │                │
+      ReplicaSet       ReplicaSet       ReplicaSet
+          │                │                │
+         Pods             Pods             Pods
+          │                │                │
+          └────────────────┼────────────────┘
+                           │
+                        Services
+```
 
-Kubernetes concepts
+### Kubernetes work
 
-* Control plane / worker architecture
-* Deployments
-* ReplicaSets
-* Pods
-* Services
-* ClusterIP
-* NodePort
-* Labels and selectors
-* Endpoint discovery
-* Environment configuration
-* Container images
-* containerd
-* Kubespray
-* Helm
+- Kubernetes cluster deployment
+- Kubespray
+- Deployments
+- ReplicaSets
+- Pods
+- Services
+- ClusterIP
+- NodePort
+- Labels & selectors
+- Endpoint discovery
+- Environment variables
+- Container images
+- containerd
+- Nginx
+- Application / database communication
 
-⸻
+---
 
+# Helm
+
+Helm is used to package Kubernetes workloads and manage application releases.
+
+```text
+Application
+     │
+     ▼
+ Helm Chart
+     │
+     ├── values.yaml
+     ├── deployment.yaml
+     ├── service.yaml
+     └── templates/
+             │
+             ▼
+       Kubernetes Cluster
+```
+
+### Helm workflow
+
+```text
+Chart
+  ↓
+values.yaml
+  ↓
+helm install / upgrade
+  ↓
+Kubernetes resources
+  ↓
+Pods
+  ↓
+Services
+  ↓
+Application
+```
+
+---
+
+# CI/CD
+
+The target delivery pipeline is built around automated validation and deployment.
+
+```text
+Developer
+    │
+    ▼
+   Git
+    │
+    ▼
+ Lint / Validation
+    │
+    ▼
+   Tests
+    │
+    ▼
+ Application Build
+    │
+    ▼
+ Docker Image
+    │
+    ▼
+Container Registry
+    │
+    ▼
+ Helm Deployment
+    │
+    ▼
+ Kubernetes
+    │
+    ▼
+ Health Check
+    │
+    ▼
+ Production / Test Stand
+```
+
+### CI/CD goals
+
+- Automated validation
+- Tests
+- Application build
+- Docker image build
+- Image publishing
+- Helm-based deployment
+- Kubernetes rollout
+- Health checks
+- Deployment verification
+- Rollback capability
+
+---
+
+# Observability
+
+The observability layer is built around metrics, logs and alerting.
+
+```text
+                 Application
+                      │
+                      ▼
+                 Kubernetes
+                  │       │
+                  │       │
+                  ▼       ▼
+             Prometheus   Loki
+                  │       │
+                  └───┬───┘
+                      │
+                      ▼
+                   Grafana
+                      │
+                      ▼
+                   Alerts
+```
+
+### Focus areas
+
+- Application metrics
+- Infrastructure metrics
+- Kubernetes metrics
+- Centralized logging
+- Dashboards
+- Alerting
+- Incident investigation
+- Performance troubleshooting
+
+---
+
+# DevSecOps
+
+Security is treated as part of the delivery process rather than a separate stage.
+
+### Kubernetes security
+
+- RBAC
+- ServiceAccounts
+- Secrets
+- SecurityContext
+- NetworkPolicy
+- Least-privilege access
+
+### Container security
+
+- Image scanning
+- Dependency checks
+- Secret detection
+- Secure registry workflow
+
+### CI/CD security
+
+```text
+Code
+  ↓
+Validation
+  ↓
+Tests
+  ↓
+Security Checks
+  ↓
+Docker Image
+  ↓
+Image Scan
+  ↓
+Registry
+  ↓
+Controlled Deployment
+```
+
+---
+
+# Troubleshooting Approach
+
+When a system fails, I prefer to identify the root cause instead of applying random fixes.
+
+```text
+Symptom
+   │
+   ▼
+Metrics
+   │
+   ▼
+Logs
+   │
+   ▼
+Hypothesis
+   │
+   ▼
+Verification
+   │
+   ▼
+Root Cause
+   │
+   ▼
+Fix
+   │
+   ▼
+Validation
+```
+
+Typical Kubernetes troubleshooting flow:
+
+```text
+Pod status
+    ↓
+kubectl describe
+    ↓
+Events
+    ↓
+Logs
+    ↓
+Deployment
+    ↓
+Service
+    ↓
+Selector / Labels
+    ↓
+Endpoints
+    ↓
+Network / Ports
+    ↓
+Root Cause
+```
+
+---
+
+# Engineering Approach
+
+I work with the system as a whole rather than focusing only on application code.
+
+```text
+Client
+  ↓
+API
+  ↓
+Application
+  ↓
+Database
+  ↓
+External Services
+  ↓
+Container
+  ↓
+Kubernetes
+  ↓
 CI/CD
-
-Current delivery architecture:
-
-flowchart LR
-    Developer["Developer"]
-    Git["Git"]
-    Lint["Lint"]
-    Test["Tests"]
-    Build["Build"]
-    Docker["Docker Image"]
-    Registry["Container Registry"]
-    Deploy["Helm Deploy"]
-    K8s["Kubernetes"]
-    Health["Health Check"]
-    Developer --> Git
-    Git --> Lint
-    Lint --> Test
-    Test --> Build
-    Build --> Docker
-    Docker --> Registry
-    Registry --> Deploy
-    Deploy --> K8s
-    K8s --> Health
-
-The target pipeline is designed around:
-
-* Source validation
-* Automated tests
-* Application build
-* Docker image build
-* Image publishing
-* Kubernetes deployment
-* Helm-based releases
-* Deployment verification
-* Health checks
-* Rollback capability
-
-⸻
-
+  ↓
 Observability
+  ↓
+Security
+```
 
-The observability stack is built around metrics, logs and alerting.
+My approach:
 
-flowchart LR
-    App["Application"]
-    K8s["Kubernetes"]
-    Prom["Prometheus"]
-    Grafana["Grafana"]
-    Loki["Loki"]
-    Alert["Alerting"]
-    App --> K8s
-    K8s --> Prom
-    K8s --> Loki
-    Prom --> Grafana
-    Loki --> Grafana
-    Prom --> Alert
+- Understand the system before changing it
+- Prefer simple and reproducible solutions
+- Verify assumptions through logs, metrics and system state
+- Keep deployment and rollback procedures documented
+- Consider application and infrastructure together
+- Use AI-assisted development as an accelerator while keeping architecture, decisions and verification under my control
 
-The goal is to be able to move from:
+---
 
-Symptom → Metrics → Logs → Hypothesis → Verification → Root Cause → Fix
+# Current Technical Direction
 
-rather than troubleshooting by trial and error.
+### Backend + Full Stack + DevOps + DevSecOps
 
-⸻
+```text
+                    Engineering
+                         │
+          ┌──────────────┼──────────────┐
+          │              │              │
+       Backend       Full Stack       DevOps
+          │              │              │
+          │              │       ┌──────┼──────┐
+          │              │       │      │      │
+          │              │    Docker  K8s   CI/CD
+          │              │              │
+          │              │       ┌──────┼──────┐
+          │              │       │      │      │
+          │              │     Helm  Ansible  IaC
+          │              │
+          └──────────────┼─────────────────────┐
+                         │                     │
+                    DevSecOps             Observability
+                         │                     │
+                  ┌──────┼──────┐        ┌────┼────┐
+                  │      │      │        │    │    │
+                 RBAC  Images  CI/CD   Prom  Grafana Loki
+```
 
-Security / DevSecOps
+---
 
-The infrastructure direction includes security controls at both application and Kubernetes levels.
+# What I Build
 
-Kubernetes security
+I am interested in systems where development and infrastructure meet:
 
-* RBAC
-* ServiceAccounts
-* Secrets
-* SecurityContext
-* NetworkPolicy
-* Least-privilege access
-* Container security
+- Backend services
+- REST APIs
+- Full Stack applications
+- Microservices
+- Dockerized applications
+- Kubernetes environments
+- CI/CD pipelines
+- Observability
+- Infrastructure automation
+- DevSecOps
+- Production troubleshooting
 
-CI/CD security
+---
 
-* Image scanning
-* Dependency checks
-* Secret detection
-* Secure registry workflow
-* Controlled deployment permissions
+# Contact
 
-⸻
-
-Engineering Approach
-
-I focus on the complete system rather than isolated components.
-
-flowchart LR
-    Client["Client"]
-    API["API"]
-    App["Application"]
-    DB[("Database")]
-    External["External Services"]
-    Container["Containers"]
-    K8s["Infrastructure"]
-    Obs["Observability"]
-    Client --> API
-    API --> App
-    App --> DB
-    App --> External
-    App --> Container
-    Container --> K8s
-    K8s --> Obs
-
-When something breaks, I approach the problem systematically:
-
-flowchart LR
-    Symptom["Symptom"]
-    Metrics["Metrics"]
-    Logs["Logs"]
-    Hypothesis["Hypothesis"]
-    Verify["Verification"]
-    Root["Root Cause"]
-    Fix["Fix"]
-    Validate["Validation"]
-    Symptom --> Metrics
-    Metrics --> Logs
-    Logs --> Hypothesis
-    Hypothesis --> Verify
-    Verify --> Root
-    Root --> Fix
-    Fix --> Validate
-
-I use AI-assisted development as an engineering accelerator while keeping architecture, technical decisions, verification and system behavior under my control.
-
-⸻
-
-Current Technical Direction
-
-Backend + Full Stack + DevOps + DevSecOps
-
-flowchart TB
-    Backend["Backend"]
-    FullStack["Full Stack"]
-    DevOps["DevOps"]
-    DevSecOps["DevSecOps"]
-    Backend --> DevOps
-    FullStack --> DevOps
-    DevOps --> DevSecOps
-    DevOps --> Kubernetes["Kubernetes"]
-    DevOps --> Helm["Helm"]
-    DevOps --> CICD["CI/CD"]
-    DevOps --> Ansible["Ansible"]
-    DevOps --> Observability["Observability"]
-    DevOps --> IaC["Infrastructure as Code"]
-    DevOps --> GitOps["GitOps"]
-    DevSecOps --> K8sSecurity["Kubernetes Security"]
-    DevSecOps --> ImageSecurity["Container / Image Security"]
-    DevSecOps --> PipelineSecurity["CI/CD Security"]
-
-⸻
-
-Contact
-
-* GitHub: https://github.com/s1kata
-* Telegram: https://t.me/ilyasmardaliev
-* Email: mardaliyevilyas12@gmail.com
-* Production: https://travelhub63.ru
-* App Store: TravelHub
+**GitHub:** https://github.com/s1kata  
+**Telegram:** https://t.me/ilyasmardaliev  
+**Email:** mardaliyevilyas12@gmail.com  
+**Production:** https://travelhub63.ru  
+**App Store:** TravelHub
